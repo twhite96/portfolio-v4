@@ -15,6 +15,7 @@ body {
 .gradientBg {
 	display: flex;
 	background: linear-gradient(to right, #ff416c, #ff4b2b);
+	position: relative;
 	&--blog {
 		background: linear-gradient(to right, #8e2de2, #4a00e0);
 	}
@@ -70,4 +71,11 @@ body {
 			}
 		}
 	}
+}
+
+.blog-post-content {
+	max-width: 800px;
+	margin: 0 auto;
+	line-height: 2;
+	font-size: 18px;
 }

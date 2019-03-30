@@ -1,17 +1,17 @@
 /* eslint-disable */
 import React from 'react'
-import { FaGithub } from 'react-icons/fa'
+import { Link } from 'gatsby'
 
 import './style.scss'
 
 const Navbar = () => (
 	<div className='hero-head'>
-		<nav className='navbar is-danger'>
+		<nav className='navbar is-transparent'>
 			<div className='container'>
 				<div className='navbar-brand'>
-					<a className='navbar-item' href='/'>
+					<Link className='navbar-item has-text-white' to='/'>
 						Glenn Francis
-					</a>
+					</Link>
 				</div>
 				<div id='navbarMenuHeroA' className='navbar-menu'>
 					<div className='navbar-end'>

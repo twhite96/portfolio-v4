@@ -1,32 +1,25 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 
 class blogs extends Component {
-	componentDidMount() {
-		fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
-			.then(response => response.json())
-			.then(json => this.setState({ posts: json }))
-	}
-
-	state = {
-		posts: []
-	}
-
 	renderPosts() {
-		return this.state.posts.map(post => (
-			<div className='column is-one-third'>
-				<div className='card' key={post.title}>
-					<div class='card-image'>
-						<figure class='image is-4by3'>
+		return this.props.posts.map((post, id) => (
+			<div className='column is-one-third' key={id}>
+				<div className='card'>
+					<div className='card-image'>
+						<figure className='image is-4by3'>
 							<img
-								src='https://bulma.io/images/placeholders/1280x960.png'
-								alt='Placeholder'
+								src={post.node.frontmatter.thumbnail}
+								alt={post.node.frontmatter.title}
 							/>
 						</figure>
 					</div>
 					<div className='card-content'>
 						<div className='content'>
 							<h4>
-								<a href='/'>{post.title}</a>
+								<Link to={post.node.frontmatter.path}>
+									{post.node.frontmatter.title}
+								</Link>
 							</h4>
 						</div>
 					</div>
@@ -36,7 +29,7 @@ class blogs extends Component {
 	}
 
 	render() {
-		console.log(this.state.posts)
+		console.log(this.props.posts)
 		return (
 			<div>
 				<section className='section'>

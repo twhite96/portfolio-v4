@@ -2,12 +2,13 @@ import React from 'react'
 import './style.scss'
 import Navbar from './navbar'
 import Particles from 'react-particles-js'
+import { Link } from 'gatsby'
 
 const Header = ({ siteTitle }) => (
 	<section className='hero gradientBg is-medium'>
 		<Navbar />
 		<Particles
-			style={{ position: 'absolute' }}
+			style={{ position: 'absolute', top: 0, left: 0 }}
 			params={{
 				particles: {
 					number: {
@@ -34,16 +35,16 @@ const Header = ({ siteTitle }) => (
 						I CREATE HIGH QUALITY DIGITAL DESIGNS & USER‑FRIENDLY EXPERIENCES.
 					</h1>
 					<div className='buttons are-large field is-grouped has-text-weight-bold'>
-						<a
-							href='/work'
+						<Link
+							to='/work'
 							className='has-text-weight-bold button rounded is-uppercase is-primary'>
 							My Work
-						</a>
-						<a
-							href='/blog'
+						</Link>
+						<Link
+							to='/blog'
 							className='button is-uppercase is-danger has-text-weight-bold'>
 							Blog
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

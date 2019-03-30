@@ -1,5 +1,4 @@
 const path = require('path')
-const graphql = require('gatsby').graphql
 
 exports.createPages = ({ actions, graphql }) => {
 	const { createPage } = actions
