@@ -1,12 +1,23 @@
+// Font
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+
 // Importing variables
 @import './variables.scss';
 
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
+@import '~bulma-timeline/dist/css/bulma-timeline';
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
 
 .gradientBg {
 	display: flex;
-	background: linear-gradient(to right, $primary-color, $secondary-color);
+	background: linear-gradient(to right, #ff416c, #ff4b2b);
+	&--blog {
+		background: linear-gradient(to right, #8e2de2, #4a00e0);
+	}
 }
 
 .center {
@@ -25,5 +36,38 @@
 	}
 	a:hover {
 		color: $secondary-color;
+	}
+}
+
+.content {
+	h1 {
+		max-width: 840px;
+		font-size: 50px;
+		font-weight: bold;
+	}
+}
+
+.footer-content {
+	justify-content: space-between;
+	width: 100%;
+	max-width: 840px;
+}
+.footer {
+	justify-content: center;
+	& a {
+		width: 60px;
+		height: 60px;
+		border: 0;
+		padding: 12px;
+		border-radius: 50%;
+		margin: 0 10px;
+		transition: all 0.5s ease;
+
+		&:hover {
+			background: #ff416c;
+			& .footer-social {
+				color: white !important;
+			}
+		}
 	}
 }
