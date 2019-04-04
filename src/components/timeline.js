@@ -58,7 +58,13 @@ const timeline = () => (
 				</div>
 			</div>
 			<header className='timeline-header'>
-				<span className='tag is-medium is-primary'>Start</span>
+				<span className='tag is-large is-danger'>
+					<a
+						className='has-text-white'
+						href='https://drive.google.com/file/d/1DfRuDa4WKbgPiu8xlv99iIW0sOmHqwM5/view?usp=sharing'>
+						VIEW MY RESUME
+					</a>
+				</span>
 			</header>
 		</div>
 	</>

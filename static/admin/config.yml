@@ -31,7 +31,8 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
-      - { label: 'Description', name: 'description', widget: 'text' }
+      - { name: 'link', label: 'Link', widget: 'string' }
+      - { name: 'github', label: 'Github', widget: 'string' }
       - {
           label: 'Featured Image',
           name: 'thumbnail',

@@ -13,12 +13,12 @@ export default function Template({
 	return (
 		<div>
 			<Helmet />
-			<Header back />
+			<Header backButton background={frontmatter.thumbnail} />
 			<section className='section'>
 				<div className='container'>
 					<div className='content has-text-centered'>
-						<h3 className='has-text-danger'>{frontmatter.title}</h3>
-						<h2>{frontmatter.date}</h2>
+						<h2 className='has-text-danger'>{frontmatter.title}</h2>
+						<h4>{frontmatter.date}</h4>
 						<img src={frontmatter.thumbnail} alt={frontmatter.title} />
 						<hr />
 						<div
@@ -42,6 +42,8 @@ export const pageQuery = graphql`
 				path
 				title
 				thumbnail
+				github
+				link
 			}
 		}
 	}

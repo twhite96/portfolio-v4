@@ -5,11 +5,11 @@ import BlogHeader from './blog-header'
 import Footer from './footer'
 import Work from './work'
 
-const WorkLayout = ({ children }) => (
+const WorkLayout = ({ posts }) => (
 	<div>
 		<Helmet />
 		<BlogHeader title='My Work' />
-		<Work />
+		<Work posts={posts} />
 		<Footer />
 	</div>
 )

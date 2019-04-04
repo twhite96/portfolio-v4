@@ -56,7 +56,6 @@ const skills = () => {
 					</article>
 				</div>
 			</div>
-			<button className='button is-medium is-danger'>Download My Resume</button>
 		</div>
 	)
 }
