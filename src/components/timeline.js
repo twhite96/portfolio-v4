@@ -61,7 +61,7 @@ const timeline = () => (
 				<span className='tag is-large is-danger'>
 					<a
 						className='has-text-white'
-						href='https://drive.google.com/file/d/1DfRuDa4WKbgPiu8xlv99iIW0sOmHqwM5/view?usp=sharing'>
+						href='https://docs.google.com/document/d/188YaEALhvNyaN8wjZqvv5tC57ICm29KCr02oT87iT5c/edit?usp=sharing'>
 						VIEW MY RESUME
 					</a>
 				</span>

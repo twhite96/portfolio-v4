@@ -73,11 +73,6 @@ const Header = ({ siteTitle }) => (
 							className='has-text-weight-bold button rounded is-uppercase is-primary'>
 							My Work
 						</Link>
-						<Link
-							to='/blog'
-							className='button is-uppercase is-danger has-text-weight-bold'>
-							Blog
-						</Link>
 					</div>
 				</div>
 			</div>
